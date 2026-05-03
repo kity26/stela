@@ -5,6 +5,10 @@ import heroImg from './assets/hero.png'
 import StelaImg from './assets/Stela png.png'
 import './App.css'
 
+// Import SVG icons
+import DocumentationIcon from './assets/iconsax-ai-users-ac23a23b5f91-.svg'
+import SocialIcon from './assets/iconsax-instagram-ec7376f22dab-.svg'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,9 +27,7 @@ function App() {
 
       <section id="next-steps">
         <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
+          <img src={DocumentationIcon} alt="Documentation" className="icon" />
           <h2>Rejoindre notre aventure</h2>
           <p>16 ans minimum et un esprit de respect, persévérance et d'élégance sont nécessaires à la réussite au sein de notre équipe</p>
           <p>
@@ -45,9 +47,7 @@ function App() {
           </ul>
         </div>
         <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
+          <img src={SocialIcon} alt="Social" className="icon" />
           <h2>Bienvenue dans notre univers</h2>
           <p>Rejoindre la Stela community</p>
           <ul>
