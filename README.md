@@ -1,18 +1,53 @@
-# React + Vite
+# STELA eSport
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site web officiel de l'équipe STELA eSport.
 
-Currently, two official plugins are available:
+## 🚀 Déploiement GitHub Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Le site est configuré pour être déployé automatiquement sur GitHub Pages.
 
-## React Compiler
+### Configuration requise
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. **Allez dans les paramètres du repository** : `Settings` → `Pages`
+2. **Source** : Sélectionnez `GitHub Actions`
+3. **Workflow** : Le déploiement se fait automatiquement via GitHub Actions
 
-Note: This will impact Vite dev & build performances.
+### Workflow de déploiement
 
-## Expanding the ESLint configuration
+Le site utilise un workflow GitHub Actions qui :
+- Construit le projet avec Vite
+- Déploie automatiquement sur GitHub Pages
+- Utilise le bon base path `/stela-esport/`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Développement local
+
+```bash
+# Installation des dépendances
+pnpm install
+
+# Développement
+pnpm run dev
+
+# Build de production
+pnpm run build
+
+# Prévisualisation
+npx vite preview
+```
+
+### Problèmes résolus
+
+- ✅ **Page blanche** : Correction des chemins d'assets SVG
+- ✅ **Base path** : Configuration pour GitHub Pages
+- ✅ **Imports ES6** : Remplacement des références SVG symbol par des imports
+- ✅ **Build** : Optimisation pour le déploiement
+
+### Liens importants
+
+- **Site déployé** : https://kity26.github.io/stela/
+- **Discord** : https://discord.gg/GzbdJRjZ3k
+- **Repository** : https://github.com/kity26/stela
+
+---
+
+*Maintenu par l'équipe STELA eSport*
