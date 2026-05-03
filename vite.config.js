@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base: process.env.NODE_ENV === 'production' ? '/stela-esport/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/stela/' : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
